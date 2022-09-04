@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tabulator</title>
+</head>
+<body>
+    <div id="txt">
+        <p id="tbl">TABULATOR</p>
+    </div>
+    <button onclick="duplicate()" id="dup">Duplicar</button>
+    <button onclick="window.print()" id="print">Imprimir</button>
+    <div id="name">
+        <input id="nome" type="text" placeholder="Nome da música"></input>
+    </div>
+    <div id="dates">
+        <input id="comp" type="text" placeholder="Compositor"></input>
+        <input id="tom" type="text" placeholder="Tom"></input>
+        <input id="afin" type="text" placeholder="Afinação"></input>
+    </div>
+    <section id="td">
+        <div id="cont">
+            <input type="text" id="let" spellcheck="false">
+            <input type="text" id="let1" contenteditable spellcheck="false">
+            <input type="text" id="let2" contenteditable spellcheck="false">
+            <input type="text" id="let3" contenteditable spellcheck="false">
+            <input type="text" id="let4" contenteditable spellcheck="false">
+            <input type="text" id="let5" contenteditable spellcheck="false">
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" 
+    integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" 
+    crossorigin="anonymous"></script>
+    <script>
+        var letr=document.getElementById('let')
+        var letr1=document.getElementById('let1')
+        var letr2=document.getElementById('let2')
+        var letr3=document.getElementById('let3')
+        var letr4=document.getElementById('let4')
+        var letr5=document.getElementById('let5') 
+        var i=0
+        while(i<279){     
+            letr.value+='-'     
+            letr1.value+='-'
+            letr2.value+='-'
+            letr3.value+='-'
+            letr4.value+='-'
+            letr5.value+='-'
+            i++
+        }
+        function duplicate(){
+            var sec=document.getElementById('td')
+            var filhos=sec.children[0]
+            var clone=filhos.cloneNode(true)
+            var adicionar=document.body.appendChild(clone)
+        }
+    </script>
+</body>
+</html>

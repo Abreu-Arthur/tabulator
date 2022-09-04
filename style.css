@@ -1,0 +1,83 @@
+body{
+    background-color: #f5deb3;
+}
+#txt{
+    width:auto;
+    height:80px;
+    margin:10px;
+    text-align: center;
+}
+#tbl{
+    color:#000;
+    font-style:italic;
+    font-size:xx-large;
+    font-weight: 800;
+    font-family: cursive;
+}
+#dup,#print{
+    width:80px;
+    height:20px;
+    background-color: rgb(251, 183, 127);
+    border:none;
+    border-radius: 15px;
+}
+#name,#dates{ 
+    width:auto;
+    height:40px;
+    margin:10px;
+    text-align: center;
+}
+#nome{  
+    color:#000;
+    font-style:italic;
+    font-size:20px;
+    font-weight: 600;
+    font-family: cursive;
+    text-transform: uppercase;
+    border-radius: 10px;
+    text-align: center;
+}
+#comp,#tom,#afin{  
+    color:#000;
+    font-style:italic;
+    font-size:15px;
+    font-weight: 600;
+    font-family: cursive;
+    text-transform: uppercase;
+    border-radius: 10px;
+    text-align: center;
+    margin-left:20px;
+}
+#cont{
+    width:auto;
+    height:200px;
+    border:1px solid #000;
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+    overflow:hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#let,#let1,#let2,#let3,#let4,#let5{
+    width:auto;
+    height:40px;
+    border:0px solid #000;
+    flex:1;
+    overflow:hidden;
+    font-size:20px;
+    background-color: wheat;
+}
+body::-webkit-scrollbar {
+    width: 10px; 
+    background-color: #fff;
+}
+body::-webkit-scrollbar-track {
+    background: wheat;  
+    margin-left: 5px;      /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: black;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 1px solid black;  /* creates padding around scroll thumb */
+}
